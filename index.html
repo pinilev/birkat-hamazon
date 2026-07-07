@@ -1,174 +1,371 @@
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>ברכת המזון - וַיְכַלְכֵּל יוֹסֵף</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברכת המזון - נוסח אסף</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap');
-        body { font-family: 'Frank Ruhl Libre', serif; }
-        .dark { background-color: #121212; color: #e0dacf; }
+        body {
+            font-family: 'Frank Ruhl Libre', serif;
+            background-color: #f4ead6; /* Warm parchment beige background */
+            color: #3b2a1a; /* Deep espresso brown text */
+        }
+        h1, h2, h3, .heebo-font {
+            font-family: 'Heebo', sans-serif;
+        }
+        .prayer-text {
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+        @media (min-width: 768px) {
+            .prayer-text {
+                font-size: 1.25rem;
+            }
+        }
+        
+        /* Apply frames to ALL sections */
+        section {
+            background-color: #fffdfa; /* Off-white for the text area inside the frame */
+            border: 1px solid #d8c3af; /* Soft brown border */
+            border-radius: 0.5rem;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(60, 40, 20, 0.05); /* Faint brown shadow */
+        }
+        
+        /* Special boxes get a slightly darker background and double border */
+        .special-box {
+            background-color: #f7efe6; 
+            border: 2px solid #b89a7f;
+        }
+        
+        .italic-text {
+            font-style: italic;
+        }
+
+        /* Color overrides for Tailwind classes to match the brown theme */
+        .text-blue-900 { color: #5c4028 !important; }
+        .text-gray-800 { color: #2e1c0d !important; }
+        .text-gray-600 { color: #5c4634 !important; }
+        .text-gray-500 { color: #7a6350 !important; }
+        .border-gray-200 { border-color: #e0d0c0 !important; }
+        .bg-white { background-color: #fffdfa !important; }
+        .bg-gray-100 { background-color: #ecdac5 !important; color: #5c4028 !important; }
+        
+        /* New semantic classes for text formatting */
+        .name-of-god { color: #1e3a8a; font-weight: 700; } /* Blue and Bold */
+        .highlight-red { color: #7f1d1d; font-weight: 700; } /* Dark Red and Bold */
+        .highlight-bold { font-weight: 700; } /* Just Bold */
     </style>
 </head>
+<body class="antialiased pb-12">
 
-<body class="bg-[#fcfaf2] text-[#2c251e] dark:bg-[#121212] dark:text-[#e0dacf] transition-colors duration-300">
-
-    <header class="sticky top-0 bg-[#faf6eb]/95 dark:bg-[#181818]/95 backdrop-blur-md border-b border-[#e6dec9] dark:border-[#2a2a2a] p-4 z-10">
-        <div class="max-w-4xl mx-auto flex flex-col gap-4">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="text-xl font-bold text-amber-800 dark:text-amber-400">וַיְכַלְכֵּל יוֹסֵף... לֶחֶם לְפִי הַטָּף</h1>
-                </div>
+    <header class="bg-white shadow-sm border-b sticky top-0 z-10 pt-4 pb-2 px-4 mb-6">
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-right">
+            
+            <div class="mb-2 md:mb-0 w-full md:w-auto text-right order-2 md:order-1">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-800">וַיְכַלְכֵּל יוֹסֵף... לֶחֶם לְפִי הַטָּף</h1>
+                <h2 class="text-lg md:text-xl text-gray-600 mt-1 heebo-font">ברכת המזון (נוסח אסף)</h2>
+            </div>
+            
+            <div class="order-1 md:order-2 self-start md:self-center bg-gray-100 rounded-lg px-3 py-1 shadow-inner text-sm font-semibold heebo-font text-blue-900 mb-3 md:mb-0" id="hebrew-date">
+                טוען תאריך...
             </div>
         </div>
     </header>
 
-        <div>
-<table>
-<tr>
-<td style="text-align: center;">
+    <main class="max-w-3xl mx-auto px-4 md:px-6">
+        
+        <section class="prayer-text">
+            <p class="italic-text mb-4 text-gray-600">
+                אֲבָרְכָה אֶת-<span class="name-of-god">יי</span> בְּכָל-עֵת.<br>
+                תָּמִיד תְּהִלָּתוֹ בְּפִי:<br>
+                סוֹף דָּבָר הַכֹּל נִשְׁמָע.<br>
+                אֶת-הָאֱלֹהִים יְרָא וְאֶת-מִצְוֹתָיו שְׁמוֹר,<br>
+                כִּי-זֶה כָּל-הָאָדָם:<br>
+                תְּהִלַּת <span class="name-of-god">יי</span> יְדַבֶּר פִּי.<br>
+                וִיבָרֵךְ כָּל-בָּשָׂר שֵׁם קָדְשׁוֹ לְעוֹלָם וָעֶד:<br>
+                וַאֲנַחְנוּ נְבָרֵךְ יָהּ מֵעַתָּה וְעַד-עוֹלָם הַלְלוּיָהּ:<br>
+                וַיְדַבֵּר אֵלַי, זֶה הַשֻּׁלְחָן אֲשֶׁר לִפְנֵי <span class="name-of-god">יי</span>:
+            </p>
+            
+            <div class="font-bold mb-2">רַבּוֹתַי נְבָרֵךְ</div>
+            <p>יְהִי שֵׁם <span class="name-of-god">יי</span> מְבֹרָךְ מֵעַתָּה וְעַד עוֹלָם,</p>
+            <p>בִּרְשׁוּת בַּעֲלֵי הַבַּיִת, <span class="text-gray-500 text-sm">(הַכֹּהֲנִים וְהַלְּוִיִּים)</span></p>
+            <p>וְכָל הַמְּכֻבָּדִים הַמְּסֻבִּים כָּאן,</p>
+            <p>נְבָרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ</p>
+            <p class="font-bold mt-2">בָּרוּךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ וּבְטוּבוֹ חָיִינוּ,</p>
+            <p>בָּרוּךְ הוּא וּבָרוּךְ שְׁמוֹ,</p>
+        </section>
 
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:150%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:21px;line-height:150%;font-family:"David",sans-serif;color:#948A54;'>ברכת המזון</span></strong><strong><span dir="LTR" style='font-size:21px;line-height:150%;font-family:"David",sans-serif;color:#948A54;'> </span></strong><strong><span style='font-size:19px;line-height:150%;font-family:"David",sans-serif;color:#948A54;'>(נוסח אסף)</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>אֲבָרְכָה אֶת-<strong>יי</strong> בְּכָל-עֵת.&nbsp;<br> תָּמִיד תְּהִלָּתוֹ בְּפִי:&nbsp;<br> סוֹף דָּבָר הַכֹּל נִשְׁמָע.&nbsp;<br> אֶת-הָאֱלֹהִים יְרָא וְאֶת-מִצְוֹתָיו שְׁמוֹר,&nbsp;<br> כִּי-זֶה כָּל-הָאָדָם:&nbsp;<br> תְּהִלַּת</span></em><strong><em><span style='font-family:"David",sans-serif;color:#17365D;'>&nbsp;יי&nbsp;</span></em></strong><em><span style='font-family:"David",sans-serif;color:#002060;'>יְדַבֶּר פִּי.&nbsp;<br> וִיבָרֵךְ כָּל-בָּשָׂר שֵׁם קָדְשׁוֹ לְעוֹלָם וָעֶד:&nbsp;<br> וַאֲנַחְנוּ נְבָרֵךְ יָהּ מֵעַתָּה וְעַד-עוֹלָם הַלְלוּיָהּ:&nbsp;<br> וַיְדַבֵּר אֵלַי, זֶה הַשֻּׁלְחָן אֲשֶׁר לִפְנֵי <strong>יי</strong></span></em><em><span dir="LTR" style='font-family:"David",sans-serif;color:#002060;'>:</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>רַבּוֹתַי נְבָרֵךְ</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>יְהִי שֵׁם <strong>יי</strong> מְבֹרָךְ מֵעַתָּה וְעַד עוֹלָם,</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>בִּרְשׁוּת בַּעֲלֵי הַבַּיִת, (הַכֹּהֲנִים וְהַלְּוִיִּים)</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>וְכָל הַמְּכֻבָּדִים הַמְּסֻבִּים כָּאן,</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>נְבָרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>בָּרוּךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ וּבְטוּבוֹ חָיִינוּ,</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-family:"David",sans-serif;color:#002060;'>בָּרוּךְ הוּא וּבָרוּךְ שְׁמוֹ,</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span dir="LTR" style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"David",sans-serif;color:#4F6228;'>ברכת הזן</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span dir="LTR" style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>בָּרוּךְ אַתָּה <span style="color:#244061;">יי</span>, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>,</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;<br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>הָאֵל הַזָּן</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;אוֹתָנוּ וְאֶת הָעוֹלָם כֻּלּוֹ&nbsp;<br> <strong><span style="color:#C00000;">בְּטוּבוֹ</span></strong></span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'> </span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>בְּחֵן בְּחֶסֶד בְּרֶוַח וּבְרַחֲמִים רַבִּים.&nbsp;<br> נֹתֵן לֶחֶם לְכָל-בָּשָׂר.&nbsp;<strong><span style="color:#C00000;">כִּי לְעוֹלָם חַסְדּוֹ</span></strong>:&nbsp;<br>&nbsp;וּבְטוּבוֹ הַגָּדוֹל תָּמִיד לֹא חָסַר לָנוּ&nbsp;<br>&nbsp;וְאַל יֶחְסַר לָנוּ מָזוֹן תָּמִיד לְעוֹלָם וָעֶד.&nbsp;<br> כִּי הוּא אֵל זָן <strong><span style="color:#C00000;">וּמְפַרְנֵס לַכֹּל&nbsp;</span></strong></span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְשֻׁלְחָנוֹ <strong><span style="color:#C00000;">עָרוּךְ לַכֹּל</span></strong></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>&nbsp;</span><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְהִתְקִין מִחְיָה וּמָזוֹן&nbsp;<br>&nbsp;לְכָל-בְּרִיּוֹתָיו אֲשֶׁר בָּרָא בְרַחֲמָיו&nbsp;<br> <strong><span style="color:#C00000;">וּבְרוֹב חֲסָדָיו</span></strong></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>&nbsp;</span><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>כָּאָמוּר. <strong>פּוֹתֵחַ אֶת-יָדֶךָ</strong>.</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וּמַשְׂבִּיעַ לְכָל-חַי רָצוֹן</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>:</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>בָּרוּךְ אַתָּה <span style="color:#244061;">יי</span>, הַזָּן אֶת הַכֹּל</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>:</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"David",sans-serif;color:#4F6228;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"David",sans-serif;color:#4F6228;'>על הארץ ועל המזון</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span dir="LTR" style='font-family:"David",sans-serif;color:#4F6228;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>נוֹדֶה לְּךָ</span></strong><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#17365D;'> יי </span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>אֱלֹהֵינוּ עַל שֶׁהִנְחַלְתָּ לַאֲבוֹתֵינוּ&nbsp;</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'><br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>אֶרֶץ חֶמְדָּה טוֹבָה וּרְחָבָה </span></strong><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>בְּרִית וְתוֹרָה חַיִּים וּמָזוֹן.&nbsp;<br> עַל שֶׁהוֹצֵאתָנוּ <strong><span style="color:#C00000;">מֵאֶרֶץ מִצְרַיִם</span></strong><br> וּפְדִיתָנוּ&nbsp;<strong><span style="color:#C00000;">מִבֵּית עֲבָדִים</span></strong><span style="color:black;">.</span><br>&nbsp;וְעַל בְּרִיתְךָ שֶׁחָתַמְתָּ בִּבְשָׂרֵנוּ.&nbsp;<br>&nbsp;וְעַל תּוֹרָתְךָ שֶׁלִּמַּדְתָּנוּ.&nbsp;<br>&nbsp;וְעַל חֻקֵּי רְצוֹנָךְ שֶׁהוֹדַעְתָּנוּ.&nbsp;<br> וְעַל חַיִּים וּמָזוֹן שֶׁאַתָּה זָן <strong><span style="color:#C00000;">וּמְפַרְנֵס אוֹתָנוּ</span></strong><span style="color:black;">:</span></span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְעַל הַכֹּל<strong><span style="color:#17365D;">&nbsp;יי&nbsp;</span></strong>אֱלֹהֵינוּ אֲנַחְנוּ מוֹדִים לָךְ&nbsp;<br>&nbsp;וּמְבָרְכִים אֶת שְׁמָךְ כָּאָמוּר&nbsp;<br> <strong>וְאָכַלְתָּ וְשָׂבָעְתָּ. וּבֵרַכְתָּ אֶת-<span style="color:#17365D;">יי</span> אֱלֹהֶיךָ&nbsp;<br> <span style="color:#C00000;">עַל-הָאָרֶץ הַטֹּבָה אֲשֶׁר נָתַן-לָךְ</span></strong><span style="color:black;">:</span></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>&nbsp;</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>בָּרוּךְ אַתָּה <span style="color:#17365D;">יי</span>, עַל הָאָרֶץ וְעַל הַמָּזוֹן</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>:</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span dir="LTR" style='font-family:"David",sans-serif;color:#4F6228;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"David",sans-serif;color:#4F6228;'>ברוך בונה ירושלים</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>רַחֵם נָא<span style="color:#17365D;">&nbsp;יי&nbsp;</span></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>אֱלֹהֵינוּ עָלֵינוּ וְעַל יִשְׂרָאֵל עַמָּךְ.&nbsp;<br> <strong><span style="color:#C00000;">וְעַל יְרוּשָׁלַיִם עִירָךְ</span><span style="color:black;">,</span></strong></span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְעַל הַר צִיּוֹן מִשְׁכַּן כְּבוֹדָךְ.&nbsp;<br>&nbsp;וְעַל הֵיכָלָךְ. וְעַל מְעוֹנָךְ. וְעַל דְּבִירָךְ.&nbsp;<br> <strong>וְעַל הַבַּיִת הַגָּדוֹל וְהַקָּדוֹשׁ</strong>&nbsp;<br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>שֶׁנִּקְרָא שִׁמְךָ עָלָיו</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>. אָבִינוּ רְעֵנוּ זוּנֵנוּ.&nbsp;<br>&nbsp;פַּרְנְסֵנוּ. כַּלְכְּלֵנוּ. הַרְוִיחֵנוּ&nbsp;<br> <strong><span style="color:#C00000;">הַרְוַח לָנוּ מְהֵרָה מִכָּל-צָרוֹתֵינוּ</span></strong><span style="color:black;">.</span></span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְנָא אַל תַּצְרִיכֵנוּ<strong><span style="color:#17365D;">&nbsp;יי&nbsp;</span></strong>אֱלֹהֵינוּ<br>&nbsp;לִידֵי מַתְּנוֹת בָּשָׂר וָדָם.&nbsp;<br>&nbsp;וְלֹא לִידֵי הַלְוָאָתָם. אֶלָּא לְיָדְךָ<br> <strong><span style="color:#C00000;">הַמְּלֵאָה וְהָרְחָבָה. הָעֲשִׁירָה וְהַפְּתוּחָה</span></strong><span style="color:black;">.</span><strong><span style="color:#C00000;"> </span></strong></span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>יְהִי רָצוֹן שֶׁלּא נֵבוֹשׁ בָּעוֹלָם הַזֶּה.&nbsp;<br>&nbsp;וְלֹא נִכָּלֵם לְעוֹלָם הַבָּא.&nbsp;<br> <strong>וּמַלְכוּת בֵּית דָּוִד מְשִׁיחָךְ</strong><br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>תַּחֲזִירֶנָּה לִמְקוֹמָהּ</span></strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>בִּמְהֵרָה בְיָמֵינוּ</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>:</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'> </span></strong><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong></p>
-<br>
-            <div align="right" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
-    <table dir="rtl" style="border-collapse: collapse;border-width: medium;border-style: none;border-color: currentcolor;border-image: initial;width: 241px;">
-        <tbody>
-            <tr>
-                <td style="width: 180.45pt;border: 1pt solid black;background: rgb(238, 236, 225);padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#006EAA;'>בראש חודש ובחול המועד אומרים</span></em><span dir="LTR" style='font-size:19px;line-height:  115%;font-family:"David",sans-serif;color:black;'>:<br>&nbsp;</span><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, יַעֲלֶה וְיָבֹא</span></em></strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>, וְיַגִּֽיעַ וְיֵרָאֶה, וְיֵרָצֶה וְיִשָּׁמַע, וְיִפָּקֵד וְיִזָּכֵר,<br> זִכְרוֹנֵֽנוּ וְזִכְרוֹן אֲבוֹתֵֽינוּ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וְזִכְרוֹן יְרוּשָׁלַֽיִם עִירָךְ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וְזִכְרוֹן מָשִֽׁיחַ בֶּן־דָּוִד עַבְדָּךְ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וְזִכְרוֹן כָּל־עַמְּךָ בֵּית יִשְׂרָאֵל לְפָנֶֽיךָ, לִפְלֵיטָה, לְטוֹבָה, לְחֵן, לְחֶֽסֶד וּלְרַחֲמִים, לְחַיִּים טוֹבִים וּלְשָׁלוֹם,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>- </span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>ביום</span></em><em><span dir="LTR" style='font-size:19px;line-height:  115%;font-family:"David",sans-serif;color:#C00000;'> </span></em><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>רֹאשׁ החֹֽדֶשׁ הַזֶּה</span></em></strong><em><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>- פסח:</span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'> ביום <strong>חַג הַמַּצּוֹת הַזֶּה</strong></span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>- סוכות: </span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>ביום <strong>חַג הַסֻּכּוֹת הַזֶּה</strong></span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>- בְּיוֹם מִקְרָא קֹֽדֶשׁ הַזֶּה,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>לְרַחֵם בּוֹ עָלֵֽינוּ וּלְהוֹשִׁיעֵֽנוּ.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>זָכְרֵֽנוּ</span></em><em><span dir="LTR" style='font-size:19px;line-height:  115%;font-family:"David",sans-serif;color:#4F6228;'> </span></em><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#4F6228;'>יְהֹוָה</span></em></strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'> אֱלֹהֵֽינוּ בּוֹ </span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>ל<strong>ְטוֹבָה</strong></span></em><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וּפָקְדֵֽנוּ בוֹ </span></em><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>לִבְרָכָה</span></em></strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וְהוֹשִׁיעֵֽנוּ בוֹ </span></em><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>לְחַיִּים טוֹבִים</span></em></strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>בִּדְבַר יְשׁוּעָה וְרַחֲמִים.&nbsp;<br>&nbsp;חוּס וְחָנֵּֽנוּ, וַחֲמוֹל וְרַחֵם עָלֵֽינוּ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>וְהוֹשִׁיעֵֽנוּ כִּי אֵלֶֽיךָ עֵינֵֽינוּ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>כִּי אֵל מֶֽלֶךְ חַנּוּן וְרַחוּם אָֽתָּה</span></em></strong><em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>:</span></em></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span dir="LTR" style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#006EAA;'><br></span></em><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְתִבְנֶה יְרוּשָׁלַיִם עִירָךְ&nbsp;<strong><span style="color:#C00000;">בִּמְהֵרָה בְיָמֵינוּ</span></strong>:<br>&nbsp;</span><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>בָּרוּךְ אַתָּה <span style="color:#244061;">יי</span>, בּוֹנֵה יְרוּשָׁלָיִם </span></strong><span style='font-size:12px;line-height:115%;font-family:"David",sans-serif;'>(בלחש: אָמֵן)</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"David",sans-serif;color:#4F6228;'>ברוך הטוב והמטיב</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>בָּרוּךְ אַתָּה <span style="color:#244061;">יי</span>, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>, <strong><br>&nbsp;הָאֵל אָבִינוּ מַלְכֵּנוּ אַדִּירֵנוּ. בּוֹרְאֵנוּ</strong>. <strong><br>&nbsp;גּוֹאֲלֵנוּ, יוצרנו, קְדוֹשֵׁנוּ</strong>.</span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br></span></strong><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>קְדוֹשׁ יַעֲקֹב</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>.<strong>&nbsp;רוֹעֵנוּ <span style="color:#C00000;">רוֹעֵה יִשְׂרָאֵל</span></strong>.</span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>הַמֶּלֶךְ הַטּוֹב וְהַמֵּטִיב לַכֹּל. שֶׁבְּכָל-יוֹם וָיוֹם<br>&nbsp;</span><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>הוּא הֵטִיב לָנוּ. <strong><span style="color:#C00000;">הוּא מֵטִיב לָנוּ</span></strong><span style="color:black;">.</span><span style="color:#C00000;"> </span></span><strong><span dir="LTR" style='font-size:21px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong><strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>הוּא יֵיטִיב לָנוּ</span></strong><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>.</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>הוּא גְמָלָנוּ. הוּא גוֹמְלֵנוּ. הוּא יִגְמְלֵנוּ</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'><br>&nbsp;</span><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>לָעַד <strong><span style="color:#C00000;">חֵן וָחֶסֶד וְרַחֲמִים</span></strong></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br>&nbsp;</span><span style='font-size:21px;line-height:115%;font-family:"David",sans-serif;'>וְרֶוַח וְהַצָּלָה וְכָל-טוֹב</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span><span style='font-size:12px;line-height:115%;font-family:"David",sans-serif;'>(אָמֵן)</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>הָרַחֲמָן הוּא יִשְׁתַּבַּח&nbsp;<strong><span style="color:#C00000;">עַל כִּסֵּא כְבוֹדוֹ</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יִשְׁתַּבַּח&nbsp;<strong><span style="color:#C00000;">בַּשָּׁמַיִם וּבָאָרֶץ</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יִשְׁתַּבַּח בָּנוּ&nbsp;<strong><span style="color:#C00000;">לְדוֹר דּוֹרִים</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא קֶרֶן&nbsp;<strong><span style="color:#C00000;">לְעַמּוֹ יָרִים</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יִתְפָּאַר בָּנוּ&nbsp;<strong><span style="color:#C00000;">לְנֶצַח נְצָחִים</span></strong>:&nbsp;<br>&nbsp;הָרַחֲמָן הוּא יְפַרְנְסֵנוּ בְּכָבוֹד וְלֹא בְבִזּוּי,&nbsp;<br> בְּהֶתֵּר וְלֹא בְאִסּוּר,&nbsp;<strong><span style="color:#C00000;">בְּנַחַת וְלֹא בְצָעַר</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יִתֵּן שָׁלוֹם&nbsp;<strong><span style="color:#C00000;">בֵּינֵינוּ</span></strong>:&nbsp;<br>&nbsp;הָרַחֲמָן הוּא יִשְׁלַח בְּרָכָה רְוָחָה וְהַצְלָחָה<br> <strong><span style="color:#C00000;">בְּכָל-מַעֲשֵׂה יָדֵינוּ</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יַצְלִיחַ&nbsp;<strong><span style="color:#C00000;">אֶת דְּרָכֵינוּ</span></strong>:&nbsp;<br>&nbsp;הָרַחֲמָן הוּא יִשְׁבֹּר עוֹל גָּלוּת מְהֵרָה<br> <strong><span style="color:#C00000;">מֵעַל צַוָּארֵנוּ</span></strong><span style="color:black;">:</span><br> הָרַחֲמָן הוּא יוֹלִיכֵנוּ מְהֵרָה<strong><span style="color:#C00000;"><br> קוֹמְמִיּוּת לְאַרְצֵנוּ</span></strong><span style="color:black;">:</span><br>&nbsp;הָרַחֲמָן הוּא יִרְפָּאֵנוּ רְפוּאָה שְׁלֵמָה<br>&nbsp;רְפוּאַת הַנֶּפֶשׁ וּרְפוּאַת הַגּוּף<br>&nbsp;וּרְפוּאַת הַנְּשָׁמָה:&nbsp;<br> הָרַחֲמָן הוּא יִפְתַּח לָנוּ&nbsp;<strong><span style="color:#C00000;">אֶת יָדוֹ הָרְחָבָה</span></strong>:&nbsp;<br>&nbsp;הָרַחֲמָן הוּא יְבָרֵךְ כָּל אֶחָד וְאֶחָד מִמֶּנּוּ<br>&nbsp;בִּשְׁמוֹ הַגָּדוֹל כְּמוֹ שֶׁנִּתְבָּרְכוּ אֲבוֹתֵינוּ<br> <strong>אַבְרָהָם יִצְחָק וְיַעֲקֹב</strong>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>בַּכֹּל מִכֹּל כֹּל</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>.&nbsp;<br>&nbsp;כֵּן יְבָרֵךְ אוֹתָנוּ יַחַד בְּרָכָה שְׁלֵמָה.&nbsp;<br> וְכֵן יְהִי רָצוֹן&nbsp;<strong><span style="color:#C00000;">וְנֹאמַר אָמֵן</span></strong>:&nbsp;<br> הָרַחֲמָן הוּא יִפְרוֹשׂ עָלֵינוּ <strong><span style="color:#C00000;">סֻכַּת שְׁלוֹמוֹ</span></strong></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>:</span></p>
-<div align="right" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
-    <table dir="rtl" style="border-collapse: collapse;border-width: medium;border-style: none;border-color: currentcolor;border-image: initial;width: 181px;">
-        <tbody>
-            <tr>
-                <td style="width: 136.05pt;border: 1pt solid black;background: rgb(238, 236, 225);padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:13px;line-height:115%;font-family:"David",sans-serif;color:#1F497D;'>הָרַחֲמָן הוּא יְחַדֵּשׁ עָלֵינוּ אֶת <strong>הַחֹדֶשׁ הַזֶּה</strong></span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><em><span style='font-size:13px;line-height:115%;font-family:"David",sans-serif;color:red;'>לְטוֹבָה וְלִבְרָכָה</span></em></strong></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:13px;line-height:115%;font-family:"David",sans-serif;color:#1F497D;'>הָרַחֲמָן הוּא יַגִּיעֶנּוּ <strong>לַמּוֹעֲדִים אֲחֵרִים</strong></span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:13px;line-height:115%;font-family:"David",sans-serif;color:#1F497D;'>הַבָּאִים לִקְרָאתֵנוּ לְשָׁלוֹם.</span></em></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>הָרַחֲמָן הוּא יִטַּע תּוֹרָתוֹ וְאַהֲבָתוֹ בְּלִבֵּנוּ<br>&nbsp;וְתִהְיֶה יִרְאָתוֹ עַל פָּנֵינוּ לְבִלְתִּי נֶחֱטָא<br> וְיִהְיוּ כָל-מַעֲשֵׂינוּ <strong><span style="color:#C00000;">לְשֵׁם שָׁמָיִם</span></strong>:</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></p>
-<div align="right" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
-    <table dir="rtl" style="border-collapse: collapse;border-width: medium;border-style: none;border-color: currentcolor;border-image: initial;width: 255px;">
-        <tbody>
-            <tr>
-                <td style="width: 190.95pt;border: 1pt solid black;background: rgb(238, 236, 225);padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><em><span style='font-size:13px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>ברכת האורח</span></em></strong><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>: הָרַחֲמָן הוּא יְבָרֵךְ אֶת הַשֻּׁלְחָן הַזֶּה</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>שֶׁאָכַלְנוּ עָלָיו וִיסַדֵּר בּוֹ כָּל מַעֲדַנֵּי עוֹלָם</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְיִהְיֶה כְּשֻׁלְחָנוֹ שֶׁל אַבְרָהָם אָבִינוּ,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>כָּל רָעֵב מִמֶּנּוּ יֹאכַל, וְכָל צָמֵא מִמֶּנּוּ יִשְׁתֶּה.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְאַל יֶחְסַר מִמֶּנּוּ כָּל טוּב לָעַד וּלְעוֹלְמֵי עוֹלָמִים, אמן:&nbsp;<br> הָרַחֲמָן הוּא יְבָרֵךְ אֶת <strong>בַּעַל הַבַּיִת הַזֶּה</strong></span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּבַעַל הַסְּעֻדָּה הַזֹּאת הוּא וְאִשְׁתּוֹ</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּבָנָיו &nbsp;וּבְנוֹתָּיו וְכָל אֲשֶׁר לוֹ.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>בְּבָנִים שֶׁיִּחְיוּ. וּבִנְכָסִים (וּבִנְכָדים) שֶׁיִּרְבּוּ.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>בָּרֵךְ</span></em><strong><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#17365D;'>&nbsp;יי&nbsp;</span></em></strong><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>חֵילוֹ וּפֹעַל יָדָיו תִּרְצֶה. וְיִהְיוּ נְכָסָיו</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּנְכָסֵינוּ מֻצְלָחִים וּקְרוֹבִים לָעִיר.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְאַל יִזְדַּקֵּק לְפָנָיו וְלֹא לְפָנֵינוּ</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>שׁוּם דְּבַר חֵטְא וְהִרְהוּר עָוֹן.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>שָׂשׂ וְשָׂמֵחַ כָּל הַיָּמִים</span></em></strong><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'> בְּעשֶׁר וְכָבוֹד</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>מֵעַתָּה וְעַד עוֹלָם. לֹא יֵבוֹשׁ בָּעוֹלָם הַזֶּה</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְלֹא יִכָּלֵם לָעוֹלָם הַבָּא.אָמֵן כֵּן יְהִי רָצוֹן:</span></em></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span dir="LTR" style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>&nbsp;</span></em></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>הָרַחֲמָן הוּא יְבָרֵךְ אֶת מְדִינַת יִשְׂרָאֵל</span></strong></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>רֵאשִׁית צְמִיחַת גְּאֻלָּתֵנוּ,&nbsp;</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"Quattrocento Sans",sans-serif;'>🕎</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְאֶת כָּל חַיָּלֵי צַהַ&quot;ל וְאַנְשֵׁי הַבִּטָּחוֹן,&nbsp;</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּ<strong>מְיַישְּׁבֵי אֶרֶץ יִשְׂרָאֵל</strong> בְּכָל מָקוֹם שֶׁהֵם.</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></p>
-<div align="right" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
-    <table dir="rtl" style="background: rgb(238, 236, 225);border-collapse: collapse;border-width: medium;border-style: none;border-color: currentcolor;border-image: initial;width: 245px;">
-        <tbody>
-            <tr>
-                <td style="width: 183.55pt;border: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>הָרַחֲמָן הוּא יְבָרֵךְ אֶת כָּל הַמְּסֻבִּין כָּאן,&nbsp;</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וְיִתֵּן לָנוּ הקב&quot;ה כָּל מִשְׁאֲלוֹת לִבֵּנוּ לְטוֹבָה</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>לַעֲבוֹדָתוֹ יִתְבָּרַךְ.</span></em></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span dir="LTR" style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>&nbsp;</span></em></p>
-<div align="right" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
-    <table dir="rtl" style="border-collapse: collapse;border-width: medium;border-style: none;border-color: currentcolor;border-image: initial;width: 242px;">
-        <tbody>
-            <tr>
-                <td style="width: 181.8pt;border: 1pt solid black;background: rgb(238, 236, 225);padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:12px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>בסעודת מילה: </span></em><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>הָרַחֲמָן הוּא יְבָרֵךְ אֶת הוֹרֵי הַבֵּן,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>ואֶת הַיֶּלֶד הַנּוֹלָד, וּכְשֵׁם שֶׁזִּכָּהוּ הקב&quot;ה לְמִילָה,</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>כָּךְ יְזַכֵּהוּ לְהִכָּנֵס לַתּוֹרָה וְלַחֻפָּה וְלַמִּצְוֹת</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּלְמַעֲשִׂים טוֹבִים, וְכֵן יְהִי רָצוֹן וְנֹאמַר אָמֵן.</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>הָרַחֲמָן הוּא יְבָרֵךְ אֶת מַעֲלַת הַסַּנְדָּק וְהַמּוֹהֵל</span></em></p>
-                    <p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><em><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>וּשְׁאָר הַמִּשְׁתַּדְּלִים בַּמִּצְוָה, הֵם וְכָל אֲשֶׁר לָהֶם.</span></em></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>הָרַחֲמָן הוּא יְחַיֵּינוּ וִיזַכֵּנוּ וִיקָרְבֵנוּ<br></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>לִימוֹת הַמָּשִׁיחַ וּלְבִנְיַן בֵּית הַמִּקְדָּשׁ<br>&nbsp;וּלְחַיֵּי הָעוֹלָם הַבָּא.&nbsp;<br> <strong><span style="color:#C00000;">מַגְדִּיל </span></strong><span style="color:#C00000;">(מִגְּדוֹל)<strong>&nbsp;יְשׁוּעוֹת מַלְכּוֹ</strong></span>.&nbsp;<br>&nbsp;וְעֹשֶׂה-חֶסֶד לִמְשִׁיחוֹ</span><strong><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'><br></span></strong><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>לְדָוִד וּלְזַרְעוֹ עַד-עוֹלָם</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>:&nbsp;<br>&nbsp;כְּפִירִים רָשׁוּ וְרָעֵבוּ.&nbsp;<br> וְדרְשֵׁי<strong><span style="color:#17365D;">&nbsp;יי&nbsp;</span></strong>לֹא-יַחְסְרוּ כָל-טוֹב:&nbsp;<br>&nbsp;נַעַר הָיִיתִי גַּם-זָקַנְתִּי וְלֹא-רָאִיתִי צַדִּיק נֶעֱזָב.&nbsp;<br>&nbsp;</span><span style='font-size:15px;line-height:115%;font-family:"David",sans-serif;'>וְזַרְעוֹ מְבַקֶּשׁ-לָחֶם</span><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>:&nbsp;<br> כָּל-הַיּוֹם חוֹנֵן וּמַלְוֶה. <strong><span style="color:#C00000;">וְזַרְעוֹ לִבְרָכָה</span></strong><span style="color:#002060;">:</span></span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>מַה שֶּׁאָכַלְנוּ יִהְיֶה&nbsp;<strong><span style="color:#C00000;">לְשָׂבְעָה</span></strong>.&nbsp;<br> וּמַה שֶּׁשָּׁתִינוּ יִהְיֶה&nbsp;<strong><span style="color:#C00000;">לִרְפוּאָה</span></strong>.&nbsp;<br> וּמַה שֶּׁהוֹתַרְנוּ יִהְיֶה&nbsp;<strong><span style="color:#C00000;">לִבְרָכָה</span></strong>.<br>&nbsp;כְּדִכְתִיב: וַיִּתֵּן לִפְנֵיהֶם וַיֹּאכְלוּ וַיּוֹתִרוּ<br> כִּדְבַר&nbsp;<strong><span style="color:#17365D;">יי</span></strong>:&nbsp;<br> <strong>בְּרוּכִים אַתֶּם לַ<span style="color:#17365D;">יי</span></strong>. עֹשֵׂה שָׁמַיִם וָאָרֶץ:&nbsp;<br> בָּרוּךְ הַגֶּבֶר אֲשֶׁר יִבְטַח בַּ<strong><span style="color:#17365D;">יי</span></strong></span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#002060;'>.<strong><br>&nbsp;</strong></span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>וְהָיָה</span></strong><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#17365D;'> יי </span></strong><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'>מִבְטַחוֹ</span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>:<strong><br> <span style="color:#17365D;">יי</span> עֹז לְעַמּוֹ יִתֵּן.<span style="color:#17365D;">&nbsp;יי&nbsp;</span>יְבָרֵךְ אֶת-עַמּוֹ בַשָּׁלוֹם</strong>:<br>&nbsp;עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא בְרַחֲמָיו<br>&nbsp;יַעֲשֶׂה שָׁלוֹם עָלֵינוּ</span><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:#C00000;'><br>&nbsp;</span><strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>וְעַל כָּל-עַמּוֹ יִשְׂרָאֵל <span style="color:#C00000;">וְאִמְרוּ אָמֵן</span></span></strong><span style='font-size:19px;line-height:115%;font-family:"David",sans-serif;color:black;'>:</span></p>
-<p dir="RTL" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'><span dir="LTR" style='font-size:19px;line-height:115%;font-family:"David",sans-serif;'>&nbsp;</span></p>
+        <section class="prayer-text">
+            <h3 class="text-xl font-bold mb-3 heebo-font text-blue-900 border-b pb-1">ברכת הזן</h3>
+            <p>
+                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם</span>,<br>
+                <span class="highlight-bold">הָאֵל הַזָּן</span> אוֹתָנוּ וְאֶת הָעוֹלָם כֻּלּוֹ<br>
+                <span class="highlight-red">בְּטוּבוֹ</span> בְּחֵן בְּחֶסֶד בְּרֶוַח וּבְרַחֲמִים רַבִּים.<br>
+                נֹתֵן לֶחֶם לְכָל-בָּשָׂר. <span class="highlight-red">כִּי לְעוֹלָם חַסְדּוֹ</span>:<br>
+                וּבְטוּבוֹ הַגָּדוֹל תָּמִיד לֹא חָסַר לָנוּ<br>
+                וְאַל יֶחְסַר לָנוּ מָזוֹן תָּמִיד לְעוֹלָם וָעֶד.<br>
+                כִּי הוּא אֵל זָן <span class="highlight-red">וּמְפַרְנֵס לַכֹּל</span><br>
+                וְשֻׁלְחָנוֹ <span class="highlight-red">עָרוּךְ לַכֹּל</span> וְהִתְקִין מִחְיָה וּמָזוֹן<br>
+                לְכָל-בְּרִיּוֹתָיו אֲשֶׁר בָּרָא בְרַחֲמָיו<br>
+                <span class="highlight-red">וּבְרוֹב חֲסָדָיו</span> כָּאָמוּר. <span class="highlight-bold">פּוֹתֵחַ אֶת-יָדֶךָ</span>.<br>
+                <span class="highlight-bold">וּמַשְׂבִּיעַ לְכָל-חַי רָצוֹן</span>:<br>
+                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, הַזָּן אֶת הַכֹּל</span>:
+            </p>
+        </section>
 
-</td>
-</tr>
-</table>
+        <section class="prayer-text">
+            <h3 class="text-xl font-bold mb-3 heebo-font text-blue-900 border-b pb-1">על הארץ ועל המזון</h3>
+            <p class="mb-4">
+                <span class="highlight-bold">נוֹדֶה לְּךָ</span> <span class="name-of-god">יי</span> אֱלֹהֵינוּ עַל שֶׁהִנְחַלְתָּ לַאֲבוֹתֵינוּ<br>
+                <span class="highlight-red">אֶרֶץ חֶמְדָּה טוֹבָה וּרְחָבָה</span><br>
+                בְּרִית וְתוֹרָה חַיִּים וּמָזוֹן.<br>
+                עַל שֶׁהוֹצֵאתָנוּ <span class="highlight-red">מֵאֶרֶץ מִצְרַיִם</span><br>
+                וּפְדִיתָנוּ <span class="highlight-red">מִבֵּית עֲבָדִים</span>.<br>
+                וְעַל בְּרִיתְךָ שֶׁחָתַמְתָּ בִּבְשָׂרֵנוּ.<br>
+                וְעַל תּוֹרָתְךָ שֶׁלִּמַּדְתָּנוּ.<br>
+                וְעַל חֻקֵּי רְצוֹנָךְ שֶׁהוֹדַעְתָּנוּ.<br>
+                וְעַל חַיִּים וּמָזוֹן שֶׁאַתָּה זָן <span class="highlight-red">וּמְפַרְנֵס אוֹתָנוּ</span>:
+            </p>
+            <p>
+                וְעַל הַכֹּל <span class="name-of-god">יי</span> אֱלֹהֵינוּ אֲנַחְנוּ מוֹדִים לָךְ<br>
+                וּמְבָרְכִים אֶת שְׁמָךְ כָּאָמוּר<br>
+                <span class="highlight-bold">וְאָכַלְתָּ וְשָׂבָעְתָּ. וּבֵרַכְתָּ אֶת-</span><span class="name-of-god">יי</span><span class="highlight-bold"> אֱלֹהֶיךָ</span><br>
+                <span class="highlight-red">עַל-הָאָרֶץ הַטֹּבָה אֲשֶׁר נָתַן-לָךְ</span>:<br>
+                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, עַל הָאָרֶץ וְעַל הַמָּזוֹן</span>:
+            </p>
+        </section>
 
-        </div>
+        <section class="prayer-text">
+            <h3 class="text-xl font-bold mb-3 heebo-font text-blue-900 border-b pb-1">ברוך בונה ירושלים</h3>
+            <p>
+                <span class="highlight-bold">רַחֵם נָא</span> <span class="name-of-god">יי</span> אֱלֹהֵינוּ עָלֵינוּ וְעַל יִשְׂרָאֵל עַמָּךְ.<br>
+                <span class="highlight-red">וְעַל יְרוּשָׁלַיִם עִירָךְ</span>,<br>
+                וְעַל הַר צִיּוֹן מִשְׁכַּן כְּבוֹדָךְ.<br>
+                וְעַל הֵיכָלָךְ. וְעַל מְעוֹנָךְ. וְעַל דְּבִירָךְ.<br>
+                <span class="highlight-bold">וְעַל הַבַּיִת הַגָּדוֹל וְהַקָּדוֹשׁ</span><br>
+                <span class="highlight-red">שֶׁנִּקְרָא שִׁמְךָ עָלָיו</span>. אָבִינוּ רְעֵנוּ זוּנֵנוּ.<br>
+                פַּרְנְסֵנוּ. כַּלְכְּלֵנוּ. הַרְוִיחֵנוּ<br>
+                <span class="highlight-red">הַרְוַח לָנוּ מְהֵרָה מִכָּל-צָרוֹתֵינוּ</span>.<br>
+                וְנָא אַל תַּצְרִיכֵנוּ <span class="name-of-god">יי</span> אֱלֹהֵינוּ<br>
+                לִידֵי מַתְּנוֹת בָּשָׂר וָדָם.<br>
+                וְלֹא לִידֵי הַלְוָאָתָם. אֶלָּא לְיָדְךָ<br>
+                <span class="highlight-red">הַמְּלֵאָה וְהָרְחָבָה. הָעֲשִׁירָה וְהַפְּתוּחָה</span>.<br>
+                יְהִי רָצוֹן שֶׁלּא נֵבוֹשׁ בָּעוֹלָם הַזֶּה.<br>
+                וְלֹא נִכָּלֵם לְעוֹלָם הַבָּא.<br>
+                <span class="highlight-bold">וּמַלְכוּת בֵּית דָּוִד מְשִׁיחָךְ</span><br>
+                <span class="highlight-bold">תַּחֲזִירֶנָּה לִמְקוֹמָהּ</span> בִּמְהֵרָה בְיָמֵינוּ:
+            </p>
+        </section>
 
+        <section class="special-box prayer-text">
+            <p class="mb-2 text-sm text-gray-500">בראש חודש ובחול המועד אומרים:</p>
+            <p>
+                <span class="highlight-bold">אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, יַעֲלֶה וְיָבֹא</span>, וְיַגִּֽיעַ וְיֵרָאֶה, וְיֵרָצֶה וְיִשָּׁמַע, וְיִפָּקֵד וְיִזָּכֵר,<br>
+                זִכְרוֹנֵֽנוּ וְזִכְרוֹן אֲבוֹתֵֽינוּ,<br>
+                וְזִכְרוֹן יְרוּשָׁלַֽיִם עִירָךְ,<br>
+                וְזִכְרוֹן מָשִֽׁיחַ בֶּן־דָּוִד עַבְדָּךְ,<br>
+                וְזִכְרוֹן כָּל־עַמְּךָ בֵּית יִשְׂרָאֵל לְפָנֶֽיךָ, לִפְלֵיטָה, לְטוֹבָה, לְחֵן, לְחֶֽסֶד וּלְרַחֲמִים, לְחַיִּים טוֹבִים וּלְשָׁלוֹם,<br>
+                <span class="block mt-2 mr-4">- <span class="highlight-red">ביום רֹאשׁ החֹֽדֶשׁ הַזֶּה</span>,</span>
+                <span class="block mr-4">- <span class="highlight-red">פסח: ביום חַג הַמַּצּוֹת הַזֶּה</span>,</span>
+                <span class="block mr-4">- <span class="highlight-red">סוכות: ביום חַג הַסֻּכּוֹת הַזֶּה</span>,</span>
+                <span class="block mr-4">- בְּיוֹם מִקְרָא קֹֽדֶשׁ הַזֶּה,</span>
+                <span class="block mt-2">לְרַחֵם בּוֹ עָלֵֽינוּ וּלְהוֹשִׁיעֵֽנוּ.</span>
+                זָכְרֵֽנוּ <span class="name-of-god">יי</span> אֱלֹהֵֽינוּ בּוֹ <span class="highlight-red">לְטוֹבָה</span>,<br>
+                וּפָקְדֵֽנוּ בוֹ <span class="highlight-red">לִבְרָכָה</span>,<br>
+                וְהוֹשִׁיעֵֽנוּ בוֹ <span class="highlight-red">לְחַיִּים טוֹבִים</span>,<br>
+                בִּדְבַר יְשׁוּעָה וְרַחֲמִים.<br>
+                חוּס וְחָנֵּֽנוּ, וַחֲמוֹל וְרַחֵם עָלֵֽינוּ,<br>
+                וְהוֹשִׁיעֵֽנוּ כִּי אֵלֶֽיךָ עֵינֵֽינוּ,<br>
+                <span class="highlight-red">כִּי אֵל מֶֽלֶךְ חַנּוּן וְרַחוּם אָֽתָּה</span>:
+            </p>
+        </section>
+
+        <section class="prayer-text">
+            <p>וְתִבְנֶה יְרוּשָׁלַיִם עִירָךְ <span class="highlight-red">בִּמְהֵרָה בְיָמֵינוּ</span>:</p>
+            <p><span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, בּוֹנֵה יְרוּשָׁלָיִם</span> <span class="text-sm text-gray-500">(בלחש: אָמֵן)</span></p>
+        </section>
+
+        <section class="prayer-text">
+            <h3 class="text-xl font-bold mb-3 heebo-font text-blue-900 border-b pb-1">ברוך הטוב והמטיב</h3>
+            <p class="mb-4">
+                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם,</span><br>
+                <span class="highlight-bold">הָאֵל אָבִינוּ מַלְכֵּנוּ אַדִּירֵנוּ. בּוֹרְאֵנוּ.</span><br>
+                <span class="highlight-bold">גּוֹאֲלֵנוּ, יוצרנו, קְדוֹשֵׁנוּ.</span><br>
+                <span class="highlight-red">קְדוֹשׁ יַעֲקֹב</span>. <span class="highlight-bold">רוֹעֵנוּ</span> <span class="highlight-red">רוֹעֵה יִשְׂרָאֵל</span>.<br>
+                הַמֶּלֶךְ הַטּוֹב וְהַמֵּטִיב לַכֹּל. שֶׁבְּכָל-יוֹם וָיוֹם<br>
+                הוּא הֵטִיב לָנוּ. <span class="highlight-red">הוּא מֵטִיב לָנוּ</span>.<br>
+                <span class="highlight-red">הוּא יֵיטִיב לָנוּ</span>.<br>
+                הוּא גְמָלָנוּ. הוּא גוֹמְלֵנוּ. הוּא יִגְמְלֵנוּ<br>
+                לָעַד <span class="highlight-red">חֵן וָחֶסֶד וְרַחֲמִים</span><br>
+                וְרֶוַח וְהַצָּלָה וְכָל-טוֹב <span class="text-sm text-gray-500">(אָמֵן)</span>
+            </p>
+            
+            <p class="mb-2">הָרַחֲמָן הוּא יִשְׁתַּבַּח <span class="highlight-red">עַל כִּסֵּא כְבוֹדוֹ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִשְׁתַּבַּח <span class="highlight-red">בַּשָּׁמַיִם וּבָאָרֶץ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִשְׁתַּבַּח בָּנוּ <span class="highlight-red">לְדוֹר דּוֹרִים</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא קֶרֶן <span class="highlight-red">לְעַמּוֹ יָרִים</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִתְפָּאַר בָּנוּ <span class="highlight-red">לְנֶצַח נְצָחִים</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יְפַרְנְסֵנוּ בְּכָבוֹד וְלֹא בְבִזּוּי,<br>בְּהֶתֵּר וְלֹא בְאִסּוּר, <span class="highlight-red">בְּנַחַת וְלֹא בְצָעַר</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִתֵּן שָׁלוֹם <span class="highlight-red">בֵּינֵינוּ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִשְׁלַח בְּרָכָה רְוָחָה וְהַצְלָחָה<br><span class="highlight-red">בְּכָל-מַעֲשֵׂה יָדֵינוּ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יַצְלִיחַ <span class="highlight-red">אֶת דְּרָכֵינוּ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִשְׁבֹּר עוֹל גָּלוּת מְהֵרָה<br><span class="highlight-red">מֵעַל צַוָּארֵנוּ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יוֹלִיכֵנוּ מְהֵרָה<br><span class="highlight-red">קוֹמְמִיּוּת לְאַרְצֵנוּ</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִרְפָּאֵנוּ רְפוּאָה שְׁלֵמָה<br>רְפוּאַת הַנֶּפֶשׁ וּרְפוּאַת הַגּוּף<br>וּרְפוּאַת הַנְּשָׁמָה:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יִפְתַּח לָנוּ <span class="highlight-red">אֶת יָדוֹ הָרְחָבָה</span>:</p>
+            <p class="mb-2">הָרַחֲמָן הוּא יְבָרֵךְ כָּל אֶחָד וְאֶחָד מִמֶּנּוּ<br>
+                בִּשְׁמוֹ הַגָּדוֹל כְּמוֹ שֶׁנִּתְבָּרְכוּ אֲבוֹתֵינוּ<br>
+                <span class="highlight-bold">אַבְרָהָם יִצְחָק וְיַעֲקֹב</span> <span class="highlight-red">בַּכֹּל מִכֹּל כֹּל</span>.<br>
+                כֵּן יְבָרֵךְ אוֹתָנוּ יַחַד בְּרָכָה שְׁלֵמָה.<br>
+                וְכֵן יְהִי רָצוֹן <span class="highlight-red">וְנֹאמַר אָמֵן</span>:</p>
+            <p>הָרַחֲמָן הוּא יִפְרוֹשׂ עָלֵינוּ <span class="highlight-red">סֻכַּת שְׁלוֹמוֹ</span>:</p>
+        </section>
+
+        <section class="special-box prayer-text">
+            <p>
+                הָרַחֲמָן הוּא יְחַדֵּשׁ עָלֵינוּ אֶת <span class="highlight-bold">הַחֹדֶשׁ הַזֶּה</span><br>לְטוֹבָה וְלִבְרָכָה
+            </p>
+            <p class="mt-2">
+                הָרַחֲמָן הוּא יַגִּיעֶנּוּ <span class="highlight-bold">לַמּוֹעֲדִים אֲחֵרִים</span><br>הַבָּאִים לִקְרָאתֵנוּ לְשָׁלוֹם.
+            </p>
+        </section>
+
+        <section class="prayer-text">
+            <p>
+                הָרַחֲמָן הוּא יִטַּע תּוֹרָתוֹ וְאַהֲבָתוֹ בְּלִבֵּנוּ<br>
+                וְתִהְיֶה יִרְאָתוֹ עַל פָּנֵינוּ לְבִלְתִּי נֶחֱטָא<br>
+                וְיִהְיוּ כָל-מַעֲשֵׂינוּ <span class="highlight-red">לְשֵׁם שָׁמָיִם</span>:
+            </p>
+        </section>
+
+        <section class="special-box prayer-text">
+             <p class="mb-4">
+                <span class="highlight-bold">ברכת האורח</span>: הָרַחֲמָן הוּא יְבָרֵךְ אֶת הַשֻּׁלְחָן הַזֶּה<br>
+                שֶׁאָכַלְנוּ עָלָיו וִיסַדֵּר בּוֹ כָּל מַעֲדַנֵּי עוֹלָם<br>
+                וְיִהְיֶה כְּשֻׁלְחָנוֹ שֶׁל אַבְרָהָם אָבִינוּ,<br>
+                כָּל רָעֵב מִמֶּנּוּ יֹאכַל, וְכָל צָמֵא מִמֶּנּוּ יִשְׁתֶּה.<br>
+                וְאַל יֶחְסַר מִמֶּנּוּ כָּל טוּב לָעַד וּלְעוֹלְמֵי עוֹלָמִים, אמן:
+            </p>
+            <p>
+                הָרַחֲמָן הוּא יְבָרֵךְ אֶת <span class="highlight-bold">בַּעַל הַבַּיִת הַזֶּה</span><br>
+                וּבַעַל הַסְּעֻדָּה הַזֹּאת הוּא וְאִשְׁתּוֹ<br>
+                וּבָנָיו  וּבְנוֹתָּיו וְכָל אֲשֶׁר לוֹ.<br>
+                בְּבָנִים שֶׁיִּחְיוּ. וּבִנְכָסִים (וּבִנְכָדים) שֶׁיִּרְבּוּ.<br>
+                בָּרֵךְ <span class="name-of-god">יי</span> חֵילוֹ וּפֹעַל יָדָיו תִּרְצֶה. וְיִהְיוּ נְכָסָיו<br>
+                וּנְכָסֵינוּ מֻצְלָחִים וּקְרוֹבִים לָעִיר.<br>
+                וְאַל יִזְדַּקֵּק לְפָנָיו וְלֹא לְפָנֵינוּ<br>
+                שׁוּם דְּבַר חֵטְא וְהִרְהוּר עָוֹן.<br>
+                <span class="highlight-bold">שָׂשׂ וְשָׂמֵחַ כָּל הַיָּמִים</span> בְּעשֶׁר וְכָבוֹד<br>
+                מֵעַתָּה וְעַד עוֹלָם. לֹא יֵבוֹשׁ בָּעוֹלָם הַזֶּה<br>
+                וְלֹא יִכָּלֵם לָעוֹלָם הַבָּא.אָמֵן כֵּן יְהִי רָצוֹן:
+            </p>
+        </section>
+
+        <section class="prayer-text">
+            <p>
+                <span class="highlight-bold">הָרַחֲמָן הוּא יְבָרֵךְ אֶת מְדִינַת יִשְׂרָאֵל</span><br>
+                רֵאשִׁית צְמִיחַת גְּאֻלָּתֵנוּ, <span class="text-xl inline-block mr-1">🕎</span><br>
+                וְאֶת כָּל חַיָּלֵי צַהַ"ל וְאַנְשֵׁי הַבִּטָּחוֹן,<br>
+                <span class="highlight-bold">וּמְיַישְּׁבֵי אֶרֶץ יִשְׂרָאֵל</span> בְּכָל מָקוֹם שֶׁהֵם.
+            </p>
+        </section>
+
+        <section class="special-box prayer-text">
+            <p>
+                הָרַחֲמָן הוּא יְבָרֵךְ אֶת כָּל הַמְּסֻבִּין כָּאן,<br>
+                וְיִתֵּן לָנוּ הקב"ה כָּל מִשְׁאֲלוֹת לִבֵּנוּ לְטוֹבָה<br>
+                לַעֲבוֹדָתוֹ יִתְבָּרַךְ.
+            </p>
+        </section>
+
+        <section class="special-box prayer-text">
+            <p class="mb-3">
+                בסעודת מילה: הָרַחֲמָן הוּא יְבָרֵךְ אֶת הוֹרֵי הַבֵּן,<br>
+                ואֶת הַיֶּלֶד הַנּוֹלָד, וּכְשֵׁם שֶׁזִּכָּהוּ הקב"ה לְמִילָה,<br>
+                כָּךְ יְזַכֵּהוּ לְהִכָּנֵס לַתּוֹרָה וְלַחֻפָּה וְלַמִּצְוֹת<br>
+                וּלְמַעֲשִׂים טוֹבִים, וְכֵן יְהִי רָצוֹן וְנֹאמַר אָמֵן.
+            </p>
+            <p>
+                הָרַחֲמָן הוּא יְבָרֵךְ אֶת מַעֲלַת הַסַּנְדָּק וְהַמּוֹהֵל<br>
+                וּשְׁאָר הַמִּשְׁתַּדְּלִים בַּמִּצְוָה, הֵם וְכָל אֲשֶׁר לָהֶם.
+            </p>
+        </section>
+
+        <section class="prayer-text">
+            <p class="mb-4">
+                <span class="highlight-bold">הָרַחֲמָן הוּא יְחַיֵּינוּ וִיזַכֵּנוּ וִיקָרְבֵנוּ</span><br>
+                לִימוֹת הַמָּשִׁיחַ וּלְבִנְיַן בֵּית הַמִּקְדָּשׁ<br>
+                וּלְחַיֵּי הָעוֹלָם הַבָּא.<br>
+                <span class="highlight-red">מַגְדִּיל (מִגְּדוֹל) יְשׁוּעוֹת מַלְכּוֹ</span>.<br>
+                וְעֹשֶׂה-חֶסֶד לִמְשִׁיחוֹ<br>
+                <span class="highlight-red">לְדָוִד וּלְזַרְעוֹ עַד-עוֹלָם</span>:<br>
+                כְּפִירִים רָשׁוּ וְרָעֵבוּ.<br>
+                וְדרְשֵׁי <span class="name-of-god">יי</span> לֹא-יַחְסְרוּ כָל-טוֹב:<br>
+                נַעַר הָיִיתִי גַּם-זָקַנְתִּי וְלֹא-רָאִיתִי צַדִּיק נֶעֱזָב.<br>
+                וְזַרְעוֹ מְבַקֶּשׁ-לָחֶם:<br>
+                כָּל-הַיּוֹם חוֹנֵן וּמַלְוֶה. <span class="highlight-red">וְזַרְעוֹ לִבְרָכָה</span>:
+            </p>
+
+            <p class="mb-4">
+                מַה שֶּׁאָכַלְנוּ יִהְיֶה <span class="highlight-red">לְשָׂבְעָה</span>.<br>
+                וּמַה שֶּׁשָּׁתִינוּ יִהְיֶה <span class="highlight-red">לִרְפוּאָה</span>.<br>
+                וּמַה שֶּׁהוֹתַרְנוּ יִהְיֶה <span class="highlight-red">לִבְרָכָה</span>.<br>
+                כְּדִכְתִיב: וַיִּתֵּן לִפְנֵיהֶם וַיֹּאכְלוּ וַיּוֹתִרוּ<br>
+                כִּדְבַר <span class="name-of-god">יי</span>:<br>
+                <span class="highlight-bold">בְּרוּכִים אַתֶּם לַ</span><span class="name-of-god">יי</span>. עֹשֵׂה שָׁמַיִם וָאָרֶץ:<br>
+                בָּרוּךְ הַגֶּבֶר אֲשֶׁר יִבְטַח בַּ<span class="name-of-god">יי</span>.<br>
+                <span class="highlight-red">וְהָיָה <span class="name-of-god">יי</span> מִבְטַחוֹ</span>:<br>
+                <span class="name-of-god">יי</span> <span class="highlight-bold">עֹז לְעַמּוֹ יִתֵּן</span>. <span class="name-of-god">יי</span> <span class="highlight-bold">יְבָרֵךְ אֶת-עַמּוֹ בַשָּׁלוֹם</span>:<br>
+                עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא בְרַחֲמָיו<br>
+                יַעֲשֶׂה שָׁלוֹם עָלֵינוּ<br>
+                <span class="highlight-bold">וְעַל כָּל-עַמּוֹ יִשְׂרָאֵל</span> <span class="highlight-red">וְאִמְרוּ אָמֵן</span>:
+            </p>
+        </section>
+    </main>
+
+    <script>
+        /**
+         * Fetches today's Hebrew date from Hebcal API and displays it.
+         */
+        async function fetchHebrewDate() {
+            const dateElement = document.getElementById('hebrew-date');
+            try {
+                // Get today's date in YYYY-MM-DD format
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = String(today.getMonth() + 1).padStart(2, '0');
+                const day = String(today.getDate()).padStart(2, '0');
+                const dateString = `${year}-${month}-${day}`;
+
+                // Fetch data using the specifically formatted date
+                const response = await fetch(`https://www.hebcal.com/converter?cfg=json&date=${dateString}&g2h=1&strict=1`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data && data.hebrew) {
+                    // Remove quotes if the API returns them in the string
+                    const hebrewDateStr = data.hebrew.replace(/['"]/g, '');
+                    dateElement.textContent = hebrewDateStr;
+                } else {
+                    dateElement.textContent = 'תאריך לא זמין';
+                }
+            } catch (error) {
+                console.error("Failed to fetch Hebrew date:", error);
+                dateElement.textContent = 'שגיאה בטעינת תאריך';
+            }
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', fetchHebrewDate);
+    </script>
 </body>
 </html>
