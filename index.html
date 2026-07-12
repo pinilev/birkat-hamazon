@@ -35,10 +35,17 @@
             box-shadow: 0 2px 4px rgba(60, 40, 20, 0.05); /* Faint brown shadow */
         }
         
-        /* Special boxes get a slightly darker background and double border */
+        /* Special boxes get a slightly darker background, double border, and significantly smaller font */
         .special-box {
             background-color: #f7efe6; 
             border: 2px solid #b89a7f;
+            font-size: 0.875rem !important; /* Significantly smaller text size for mobile */
+            line-height: 1.6;
+        }
+        @media (min-width: 768px) {
+            .special-box {
+                font-size: 0.95rem !important; /* Significantly smaller text size for desktop */
+            }
         }
         
         .italic-text {
@@ -56,7 +63,7 @@
         
         /* New semantic classes for text formatting */
         .name-of-god { color: #1e3a8a; font-weight: 700; } /* Blue and Bold */
-        .color-red { color: #7f1d1d; font-weight: 700; } /* Dark #ff0000 and Bold */
+        .color-red { color: #cc0000; font-weight: 700; } /* Highly readable regular red and Bold */
         .highlight-bold { font-weight: 700; } /* Just Bold */
     </style>
 </head>
@@ -136,7 +143,7 @@
                 וּמְבָרְכִים אֶת שְׁמָךְ כָּאָמוּר<br>
                 <span class="highlight-bold">וְאָכַלְתָּ וְשָׂבָעְתָּ. וּבֵרַכְתָּ אֶת-</span><span class="name-of-god">יי</span><span class="highlight-bold"> אֱלֹהֶיךָ</span><br>
                 <span class="color-red">עַל-הָאָרֶץ הַטֹּבָה אֲשֶׁר נָתַן-לָךְ</span>:<br>
-                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, עַל הָאָרֶץ וְעַל הַמָּזוֹן</span>:
+                <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, על הָאָרֶץ וְעַל הַמָּזוֹן</span>:
             </p>
         </section>
 
@@ -163,23 +170,23 @@
         </section>
 
         <section class="special-box prayer-text">
-            <p class="mb-2 text-sm text-gray-500">בראש חודש ובחול המועד אומרים:</p>
+            <p class="mb-2 text-xs text-gray-500">בראש חודש ובחול המועד אומרים:</p>
             <p>
                 <span class="highlight-bold">אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, יַעֲלֶה וְיָבֹא</span>, וְיַגִּֽיעַ וְיֵרָאֶה, וְיֵרָצֶה וְיִשָּׁמַע, וְיִפָּקֵד וְיִזָּכֵר,<br>
                 זִכְרוֹנֵֽנוּ וְזִכְרוֹן אֲבוֹתֵֽינוּ,<br>
                 וְזִכְרוֹן יְרוּשָׁלַֽיִם עִירָךְ,<br>
                 וְזִכְרוֹן מָשִֽׁיחַ בֶּן־דָּוִד עַבְדָּךְ,<br>
                 וְזִכְרוֹן כָּל־עַמְּךָ בֵּית יִשְׂרָאֵל לְפָנֶֽיךָ, לִפְלֵיטָה, לְטוֹבָה, לְחֵן, לְחֶֽסֶד וּלְרַחֲמִים, לְחַיִּים טוֹבִים וּלְשָׁלוֹם,<br>
-                <span class="block mt-2 mr-4">- <span class="color-red">ביום רֹאשׁ החֹֽדֶשׁ הַזֶּה</span>,</span>
-                <span class="block mr-4">- פסח: <span class="color-red">ביום חַג הַמַּצּוֹת הַזֶּה</span>,</span>
-                <span class="block mr-4">- סוכות: <span class="color-red">ביום חַג הַסֻּכּוֹת הַזֶּה</span>,</span>
-                <span class="block mr-4">- בְּיוֹם מִקְרָא קֹֽדֶשׁ הַזֶּה,</span>
+                <span class="block mt-2 mr-4 text-[0.8rem] md:text-[0.875rem]">- <span class="color-red">ביום רֹאשׁ החֹֽדֶשׁ הַזֶּה</span>,</span>
+                <span class="block mr-4 text-[0.8rem] md:text-[0.875rem]">- פסח: <span class="color-red">ביום חַג הַמַּצּוֹת הַזֶּה</span>,</span>
+                <span class="block mr-4 text-[0.8rem] md:text-[0.875rem]">- סוכות: <span class="color-red">ביום חַג הַסֻּכּוֹת הַזֶּה</span>,</span>
+                <span class="block mr-4 text-[0.8rem] md:text-[0.875rem]">- בְּיוֹם מִקְרָא קֹֽדֶשׁ הַזֶּה,</span>
                 <span class="block mt-2">לְרַחֵם בּוֹ עָלֵֽינוּ וּלְהוֹשִׁיעֵֽנוּ.</span>
                 זָכְרֵֽנוּ <span class="name-of-god">יי</span> אֱלֹהֵֽינוּ בּוֹ <span class="color-red">לְטוֹבָה</span>,<br>
                 וּפָקְדֵֽנוּ בוֹ <span class="color-red">לִבְרָכָה</span>,<br>
                 וְהוֹשִׁיעֵֽנוּ בוֹ <span class="color-red">לְחַיִּים טוֹבִים</span>,<br>
                 בִּדְבַר יְשׁוּעָה וְרַחֲמִים.<br>
-                חוּס וְחָנֵּֽנוּ, וַחֲמוֹל וְרַחֵם עָלֵֽינוּ,<br>
+                חוּס וְחָנֵּֽנו... וַחֲמוֹל וְרַחֵם עָלֵֽינוּ,<br>
                 וְהוֹשִׁיעֵֽנוּ כִּי אֵלֶֽיךָ עֵינֵֽינוּ,<br>
                 <span class="color-red">כִּי אֵל מֶֽלֶךְ חַנּוּן וְרַחוּם אָֽתָּה</span>:
             </p>
@@ -194,7 +201,7 @@
             <h3 class="text-xl font-bold mb-3 heebo-font text-blue-900 border-b pb-1">ברוך הטוב והמטיב</h3>
             <p class="mb-4">
                 <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם,</span><br>
-                <span class="highlight-bold">הָאֵל אָבִינוּ מַלְכֵּנוּ אַדִּירֵנוּ. בּוֹרְאֵנוּ.</span><br>
+                <span class="highlight-bold">הָאֵל אָבִינוּ מַלְכֵּנוּ אַדִּירֵנוּ. בּוֹרְאֵנו...</span><br>
                 <span class="highlight-bold">גּוֹאֲלֵנוּ, יוצרנו, קְדוֹשֵׁנוּ.</span><br>
                 <span class="color-red">קְדוֹשׁ יַעֲקֹב</span>. <span class="highlight-bold">רוֹעֵנוּ</span> <span class="color-red">רוֹעֵה יִשְׂרָאֵל</span>.<br>
                 הַמֶּלֶךְ הַטּוֹב וְהַמֵּטִיב לַכֹּל. שֶׁבְּכָל-יוֹם וָיוֹם<br>
