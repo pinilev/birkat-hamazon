@@ -12,18 +12,18 @@
             font-family: 'Frank Ruhl Libre', serif;
             background-color: #f4ead6; /* Warm parchment beige background */
             color: #3b2a1a; /* Deep espresso brown text */
-            font-size: 1.58rem; /* Decreased by 3pt (approx 0.25rem) from 1.83rem */
+            font-size: 1.33rem; /* Decreased by 3pt (approx 0.25rem) from 1.58rem */
         }
         h1, h2, h3, .heebo-font {
             font-family: 'Heebo', sans-serif;
         }
         .prayer-text {
             line-height: 1.8;
-            font-size: 1.70rem; /* Decreased by 3pt (approx 0.25rem) from 1.95rem */
+            font-size: 1.45rem; /* Decreased by 3pt (approx 0.25rem) from 1.70rem */
         }
         @media (min-width: 768px) {
             .prayer-text {
-                font-size: 1.83rem; /* Decreased by 3pt (approx 0.25rem) from 2.08rem */
+                font-size: 1.58rem; /* Decreased by 3pt (approx 0.25rem) from 1.83rem */
             }
         }
         
@@ -41,12 +41,12 @@
         .special-box {
             background-color: #f7efe6; 
             border: 2px solid #b89a7f;
-            font-size: 1.45rem !important; /* Decreased by 3pt (approx 0.25rem) from 1.7rem */
+            font-size: 1.20rem !important; /* Decreased by 3pt (approx 0.25rem) from 1.45rem */
             line-height: 1.6;
         }
         @media (min-width: 768px) {
             .special-box {
-                font-size: 1.53rem !important; /* Decreased by 3pt (approx 0.25rem) from 1.78rem */
+                font-size: 1.28rem !important; /* Decreased by 3pt (approx 0.25rem) from 1.53rem */
             }
         }
         
@@ -54,24 +54,26 @@
             font-style: italic;
         }
 
+        /* Title and subtitle area - reduced by 4pt (approx 0.33rem from absolute original) */
         header h1 {
-            font-size: calc(2.08rem - 5pt) !important; /* Reduced 2.33rem by 0.25rem */
+            font-size: 2.00rem !important; /* Decreased by 4pt (0.33rem) from 2.33rem original */
         }
         @media (min-width: 768px) {
             header h1 {
-                font-size: calc(2.45rem - 5pt) !important; /* Reduced 2.7rem by 0.25rem */
+                font-size: 2.37rem !important; /* Decreased by 4pt (0.33rem) from 2.70rem original */
             }
         }
         header h2 {
-            font-size: calc(1.70rem - 5pt) !important; /* Reduced 1.95rem by 0.25rem */
+            font-size: 1.62rem !important; /* Decreased by 4pt (0.33rem) from 1.95rem original */
         }
         @media (min-width: 768px) {
             header h2 {
-                font-size: calc(1.83rem - 5pt) !important; /* Reduced 2.08rem by 0.25rem */
+                font-size: 1.75rem !important; /* Decreased by 4pt (0.33rem) from 2.08rem original */
             }
         }
+        /* Date area remains reduced by 8pt (approx 0.67rem) */
         #hebrew-date {
-            font-size: calc(1.45rem - 5pt) !important; /* Reduced 1.7rem by 0.25rem */
+            font-size: 0.78rem !important; /* Decreased by 8pt (0.67rem) from 1.45rem */
         }
 
         /* Color overrides for Tailwind classes to match the brown theme */
@@ -88,18 +90,19 @@
         .color-red { color: #cc0000; font-weight: 700; } /* Highly readable regular red and Bold */
         .highlight-bold { font-weight: 700; } /* Just Bold */
 
-        .text-2xl { font-size: 2.08rem !important; }  /* Reduced from 2.33rem */
-        .text-3xl { font-size: 2.45rem !important; }   /* Reduced from 2.7rem */
-        .text-lg { font-size: 1.70rem !important; }   /* Reduced from 1.95rem */
-        .text-xl { font-size: 1.83rem !important; }   /* Reduced from 2.08rem */
-        .text-sm { font-size: 1.45rem !important; }    /* Reduced from 1.7rem */
-        .text-xs { font-size: 1.33rem !important; }   /* Reduced from 1.58rem */
+        /* Adjusted Tailwind class scales to match the new 3pt reduction document-wide */
+        .text-2xl { font-size: 1.83rem !important; }  /* Reduced from 2.08rem */
+        .text-3xl { font-size: 2.20rem !important; }   /* Reduced from 2.45rem */
+        .text-lg { font-size: 1.45rem !important; }    /* Reduced from 1.70rem */
+        .text-xl { font-size: 1.58rem !important; }    /* Reduced from 1.83rem */
+        .text-sm { font-size: 1.20rem !important; }    /* Reduced from 1.45rem */
+        .text-xs { font-size: 1.08rem !important; }    /* Reduced from 1.33rem */
 
         /* Specific text layout adjustments for arbitrary font sizes inside the elements */
-        .text-\[15px\] { font-size: 17.5px !important; } /* Decreased by 4px (~3pt) from 21.5px */
-        .text-\[0\.8rem\] { font-size: 1.38rem !important; } /* Decreased by 0.25rem from 1.63rem */
+        .text-\[15px\] { font-size: 13.5px !important; } /* Decreased by 4px (~3pt) from 17.5px */
+        .text-\[0\.8rem\] { font-size: 1.13rem !important; } /* Decreased by 0.25rem from 1.38rem */
         @media (min-width: 768px) {
-            .md\:text-\[0\.875rem\] { font-size: 1.45rem !important; } /* Decreased by 0.25rem from 1.7rem */
+            .md\:text-\[0\.875rem\] { font-size: 1.20rem !important; } /* Decreased by 0.25rem from 1.45rem */
         }
     </style>
 </head>
@@ -154,7 +157,6 @@
                 וְאַל יֶחְסַר לָנוּ מָזוֹן תָּמִיד לְעוֹלָם וָעֶד.<br>
                 כִּי הוּא אֵל זָן <span class="color-red">וּמְפַרְנֵס לַכֹּל</span><br>
                 וְשֻׁלְחָנוֹ <span class="color-red">עָרוּךְ לַכֹּל</span> וְהִתְקִין מִחְיָה וּמָזוֹן<br>
-                לְכָל-בְּרִיּוֹתָיו אֲשֶׁר בָּרָא בְרַחֲמָיו<br>
                 <span class="color-red">וּבְרוֹב חֲסָדָיו</span> כָּאָמוּר. <span class="highlight-bold">פּוֹתֵחַ אֶת-יָדֶךָ</span>.<br>
                 <span class="highlight-bold">וּמַשְׂבִּיעַ לְכָל-חי רָצוֹן</span>:<br>
                 <span class="highlight-bold">בָּרוּךְ אַתָּה</span> <span class="name-of-god">יי</span><span class="highlight-bold">, הַזָּן אֶת הַכֹּל</span>:
@@ -194,7 +196,7 @@
                 <span class="color-red">שֶׁנִּקְרָא שִׁמְךָ עָלָיו</span>. אָבִינוּ רְעֵנוּ זוּנֵנוּ.<br>
                 פַּרְנְסֵנוּ. כַּלְכְּלֵנוּ. הַרְוִיחֵנוּ<br>
                 <span class="color-red">הַרְוַח לָנוּ מְהֵרָה מִכָּל-צָרוֹתֵינוּ</span>.<br>
-                וְנָא אַל תַּצְרִיכֵנוּ <span class="name-of-god">יי</span> אֱלֹהֵינוּ...<br>
+                וְנָא אַל תַּצְרִיכֵנוּ <span class="name-of-god">יי</span> אֱלֹהֵינו...<br>
                 לִידֵי מַתְּנוֹת בָּשָׂר וָדָם.<br>
                 וְלֹא לִידֵי הַלְוָאָתָם. אֶלָּא לְיָדְךָ<br>
                 <span class="color-red">הַמְּלֵאָה וְהָרְחָבָה. הָעֲשִׁירָה וְהַפְּתוּחָה</span>.<br>
@@ -378,14 +380,12 @@
         async function fetchHebrewDate() {
             const dateElement = document.getElementById('hebrew-date');
             try {
-                // Get today's date in YYYY-MM-DD format
                 const today = new Date();
                 const year = today.getFullYear();
                 const month = String(today.getMonth() + 1).padStart(2, '0');
                 const day = String(today.getDate()).padStart(2, '0');
                 const dateString = `${year}-${month}-${day}`;
 
-                // Fetch data using the specifically formatted date
                 const response = await fetch(`https://www.hebcal.com/converter?cfg=json&date=${dateString}&g2h=1&strict=1`);
                 
                 if (!response.ok) {
@@ -395,7 +395,6 @@
                 const data = await response.json();
                 
                 if (data && data.hebrew) {
-                    // Remove quotes if the API returns them in the string
                     const hebrewDateStr = data.hebrew.replace(/['"]/g, '');
                     dateElement.textContent = hebrewDateStr;
                 } else {
@@ -407,7 +406,6 @@
             }
         }
 
-        // Call the function when the page loads
         document.addEventListener('DOMContentLoaded', fetchHebrewDate);
     </script>
 </body>
